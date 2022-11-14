@@ -102,7 +102,7 @@
   cursor: pointer;
   margin: 6px;
   position: relative;
-  background-color:#3da9d4
+  background-color:#e0011a
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   font-size: 0;
@@ -111,7 +111,7 @@
 .slick-dots li.slick-active button {
   background: transparent;
   text-align: left;
-  background-color:#3da9d4
+  background-color:#e0011a
   border:0px solid;
   border-color: transparent;
   width:42px;
@@ -378,7 +378,7 @@
 .banner_slider_3 .slide__content .slide__content--headings h2 span{ position: relative; }
 .banner_slider_3 .slide__content .slide__content--headings h2 span:before {
     content: '';
-    background-color:#3da9d4
+    background-color:#e0011a
     position: absolute;
     width: 100%;
     height: 16px;
@@ -542,7 +542,7 @@
 }
 .banner_slider.banner_slider_1.slick-slider .slick-prev:hover:before, 
 .banner_slider.banner_slider_1.slick-slider .slick-next:hover:before {
-    color:#3da9d4 !important;
+    color:#e0011a !important;
 }
 
 /* SLIDER HOMEPAGE 2 */

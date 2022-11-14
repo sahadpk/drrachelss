@@ -9,8 +9,8 @@
 <meta name="description" content="Dezily - Medical and Healthcare HTML Template" />
 <meta name="author" content="https://www.themetechmount.com/" />
 <meta name="viewport" content=" width=device-width, initial-scale=1, maximum-scale=2" />
-<title>Dezily - Medical and Healthcare HTML Templates</title>
-
+<title>Dr.Rachels Rheumatology centre</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="shortcut icon" href="images/favicon.png" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/animate.css"/>
@@ -135,7 +135,13 @@
             </div>
             <!-- site-header-menu end-->
         </header><!--header end-->
-
+        <div class="whatsapp-msg-sticky">
+            <a class="ph-icon"  href="tel:(+91)9995252737"><i class="fa fa-phone text-primary"></i> </a>
+                
+            <br><br>
+            <a target="blank" href="https://api.whatsapp.com/send/?phone=%2B919995252737&text=Hello%2C+We+would+like+to+enquire+more+about+the+services+offered+at+Dr.Rachel's+Rheumatology+Centre!+We+got+the+contact+from+the+website!%21&app_absent=0"> <img class="wp-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt=""> </a>
+          </div>
          <!-- page-title -->
         <div class="ttm-page-title-row">
             <div class="ttm-page-title-row-inner">
@@ -164,7 +170,7 @@
 
            
 
-        <h2 style="color:#3da9d4; text-align:center; margin-top:15px;" class="">Dr. Rachel's Rheumatology Centre
+        <h2 style="color: #e0011a; text-align:center; margin-top:15px;" class="">Dr. Rachel's Rheumatology Centre
             Consultions:</h2>
         <section class="ttm-row map-section clearfix">
             <div class="container">
@@ -343,7 +349,7 @@
         			<div class="row pt-20 res-991-pt-10">
         				<div class="col-lg-8">
         					<div class="ttm-bgcolor-white spacing-15">
-        						<form id="contact_form" class="contact_form wrap-form clearfix" method="post" novalidate="novalidate" action="#">
+        						<form id="submit-form" class="contact_form wrap-form clearfix" novalidate="novalidate" action="#">
                                     <div class="row ttm-boxes-spacing-20px">
                                         <div class="col-md-6">
                                             <label>
@@ -587,7 +593,25 @@
     <script src="js/main.js"></script>
 
     <!-- Javascript end-->
-
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx_eVcFHZGocFHnegJaNcYx8843OcqcWlZq8Xo1bGVX3_N_RGZQDh0ttLkn0sB8roSDxQ/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/dezily/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Oct 2022 05:07:23 GMT -->
