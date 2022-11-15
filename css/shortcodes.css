@@ -350,7 +350,7 @@
 .section-title.style2 h3 { margin-bottom: 15px; }
 .section-title.style2 { margin-bottom: 26px; }
 .section-title.style2 h2 span { 
-    color:#455d58!important; 
+    color:white!important; 
     text-transform: uppercase; 
 }
 
@@ -1539,6 +1539,7 @@ section { counter-reset:container; }
 /* style19*/
 .featured-icon-box.style19 {
     padding: 32px 25px 32px;
+    height: 225px;
     background-color: var(--base-white); 
     overflow: hidden;
 }
