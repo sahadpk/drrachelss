@@ -1722,7 +1722,7 @@ ul.social-icons{
 ------------------------*/
 /** SiteBrand(logo) **/
 .site-branding img {
-    max-height: 42px;
+    max-height: 75px;
     position: relative;
 }
 .site-branding{
