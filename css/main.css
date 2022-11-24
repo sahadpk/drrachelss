@@ -3695,3 +3695,10 @@ section.error-404 .page-header > div > div:last-child { margin-left: -103px; }
        
       }
   }
+  @media screen and (min-width:980px) {
+    .site-branding img {
+        object-fit: cover;
+        height: 250px;
+        width: 210px !important;
+    }
+  }
