@@ -3702,3 +3702,13 @@ section.error-404 .page-header > div > div:last-child { margin-left: -103px; }
         width: 210px !important;
     }
   }
+  @media screen and (max-width:580px) {
+    .site-branding img {
+        object-fit: cover;
+        height: 250px;
+        width: 220px !important;
+    }
+  }
+  
+
+
